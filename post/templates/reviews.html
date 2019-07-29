@@ -1,0 +1,5 @@
+{% extends 'base.html' %} {% block content %} {% for review in reviews.all %}
+<h1>{{ review.title }}</h1>
+<p>{{ review.body }}</p>
+<img src="{{ review.image }}" />
+{% endfor %} {% endblock %}
